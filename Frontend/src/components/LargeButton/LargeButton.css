@@ -1,0 +1,16 @@
+a {
+  display: block;
+  background: #2d15b6;
+  color: white;
+  text-decoration: none;
+  padding: 0.8em;
+  text-align: center;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a {
+  border-radius: 0.3em;
+}

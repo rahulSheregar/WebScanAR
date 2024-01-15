@@ -1,0 +1,104 @@
+.processing__div {
+  display: grid;
+  place-content: center;
+  -ms-flex-line-pack: start;
+  align-content: center;
+}
+
+.processing__card {
+  min-width: 90vw;
+  max-width: fit-content;
+  min-height: 50vh;
+  margin: 2em 0;
+  background: white;
+  box-shadow: 20px 20px 40px #dbd3ff;
+  border-radius: 1em;
+  padding: 2em;
+  position: relative;
+}
+
+.processing__card h5 {
+  font-size: 0.9em;
+  margin: -1em 0 1em;
+  padding: 1em;
+  background: #f5f3eb;
+  border-radius: 0.5em;
+}
+
+.processing__card a {
+  display: block;
+  background: #2d15b6;
+  color: white;
+  text-decoration: none;
+  padding: 0.8em;
+  text-align: center;
+  border-radius: 0.3em;
+  margin-bottom: 20px;
+}
+
+.processing__card #enter-ar {
+  display: none;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.processing__card #enter-ar canvas {
+  border-radius: 10px;
+}
+
+.processing__header {
+  display: flex;
+  place-items: baseline;
+}
+
+.processing__header h2 {
+  margin-bottom: 25px;
+}
+
+.processing__header span {
+  animation-name: blink;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.processing__header span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.processing__header span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.processing__stages h4 {
+  margin: 15px 0;
+  font-size: 17px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.done::after {
+  content: " ✅";
+}
+
+.failed::after {
+  content: " ❌";
+}
+
+.in-progress::after {
+  content: " ...";
+}
+
+.feature-extraction::before {
+  content: " -> ";
+}
