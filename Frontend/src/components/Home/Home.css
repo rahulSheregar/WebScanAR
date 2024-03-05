@@ -1,0 +1,88 @@
+.home__div {
+  display: grid;
+  place-content: center;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.home__card {
+  background: white;
+  -webkit-box-shadow: 20px 20px 40px #dbd3ff;
+  box-shadow: 20px 20px 40px #dbd3ff;
+  border-radius: 1em;
+  padding: 2em;
+  position: relative;
+}
+
+.home__card h2 {
+  margin: 2em 0 0.5em;
+}
+
+.home__card label {
+  display: block;
+  font-size: 1.125rem;
+  margin-bottom: 0.3em;
+}
+
+.home__card input {
+  width: 100%;
+  padding: 0.8em;
+  border: 1px solid grey;
+  border-radius: 0.3em;
+  margin-bottom: 1em;
+}
+
+.home__card p {
+  display: none;
+  font-size: 0.9em;
+  margin: -1em 0 1em;
+  padding: 1m;
+  background: #f5f3eb;
+  border-radius: 0.5em;
+}
+
+.home__onstart {
+  position: absolute;
+  top: -150px;
+  right: 0;
+  left: 0;
+}
+
+.home__inputDiv {
+  position: absolute;
+  top: 170px;
+  width: 80%;
+}
+
+.home__inputDiv .home__inputButtons {
+  display: none;
+}
+
+.home__inputDiv #upload-div {
+  display: none;
+  margin-top: 20px;
+  width: 100%;
+  position: relative;
+  top: -40px;
+}
+
+.home__inputDiv #upload-div #upload-images {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.5;
+}
+
+.home__inputDiv #upload-div #image-display {
+  margin: 1em 0 1em;
+  width: 100%;
+  height: auto;
+  display: none;
+  border: 1px solid black;
+  background-position: center;
+  background-size: cover;
+}
+
+.home__inputDiv #upload-div #generate-model {
+  display: none;
+  margin-top: 20px;
+}

@@ -1,0 +1,142 @@
+.scan__div {
+  margin: 0;
+  height: 100%;
+}
+
+.scan__main {
+  position: relative;
+  min-height: 90vh;
+}
+
+.scan__main.blur {
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.scan__icon {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.scan__icon.flashlight {
+  top: 45px;
+  left: 45px;
+  display: none;
+}
+
+.scan__icon.segment {
+  top: 45px;
+  right: 45px;
+}
+
+.scan__actionButtons {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  bottom: 0px;
+  justify-content: space-evenly;
+  padding: 5px;
+  z-index: 2;
+}
+
+.scan__actionButtons a {
+  display: none;
+  background: white;
+  box-shadow: 10px 10px 40px #dbd3ff;
+  color: black;
+  text-decoration: none;
+  padding: 0.5em;
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  border-radius: 1em;
+}
+
+.scan__actionButtons a:hover {
+  cursor: pointer;
+}
+
+.scan__actionButtons #record-button {
+  position: relative;
+}
+
+.scan__actionButtons #record-button #image-count-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: grey;
+  color: white;
+  display: none;
+}
+
+.scan__webcamDiv {
+  position: relative;
+}
+
+.scan__webcamDiv #webcamVideo {
+  width: 100vw;
+  max-height: 100vh;
+}
+
+.scan__webcamDiv #segmentationCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  visibility: visible;
+  width: 100vw;
+  max-height: 100vh;
+}
+
+.scan__webcamDiv #displayCanvas {
+  display: none;
+}
+
+/* LOADER START */
+.scan__loader {
+  border: 5px solid #f3f3f3;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  border-top: 5px solid #555;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 45vw;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* LOADER END */
